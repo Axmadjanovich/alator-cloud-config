@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: native
+  application:
+    name: alator-config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:/${user.home}/IdeaProjects/alator-creator/src/main/resources/projects
+
+server:
+  port: 8888
